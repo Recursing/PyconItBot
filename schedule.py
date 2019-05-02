@@ -90,7 +90,7 @@ def get_current_events(time):
 def next_current_events(time):
     time, schedule = get_next_schedule(time)
     current_events_text = (
-        f"<pre>Events at May {time.day}, {time.hour}:{time.minute:0<2}</pre>"
+        f"<pre>Events at May {time.day}, {time.hour}:{time.minute:0<2}</pre>\n"
     )
     current_events_text += "\n\n".join(schedule)
     return time, current_events_text
